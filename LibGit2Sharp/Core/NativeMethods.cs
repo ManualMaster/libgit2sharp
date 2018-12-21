@@ -32,7 +32,7 @@ namespace LibGit2Sharp.Core
                 string nativeLibraryDir = GlobalSettings.GetAndLockNativeLibraryPath();
                 if (nativeLibraryDir != null)
                 {
-                    string nativeLibraryPath = Path.Combine(nativeLibraryDir, libgit2 + Platform.GetNativeLibraryExtension());
+                    string nativeLibraryPath = libgit2 + Platform.GetNativeLibraryExtension();
 
                     // Try to load the .dll from the path explicitly.
                     // If this call succeeds further DllImports will find the library loaded and not attempt to load it again.
